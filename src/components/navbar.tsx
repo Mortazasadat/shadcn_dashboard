@@ -12,7 +12,7 @@ import {
 
 export default function Navbar() {
   return (
-    <nav className="bg-primary dark:bg-black py-3 items-center px-7 flex justify-between text-white">
+    <nav className="bg-primary   dark:bg-black py-3 items-center px-7 flex justify-between text-white">
       <Link href="/">
         <Image
           src="/react-tailwind.png"
@@ -35,8 +35,14 @@ export default function Navbar() {
           <DropdownMenuSeparator />
           <DropdownMenuItem>Profile</DropdownMenuItem>
           <DropdownMenuItem>Billing</DropdownMenuItem>
-          <DropdownMenuItem>Team</DropdownMenuItem>
-          <DropdownMenuItem>Subscription</DropdownMenuItem>
+
+          <DropdownMenuSeparator />
+          <DropdownMenuItem className="relative cursor-pointer ">
+            <Link className="text-red-500 " href="/auth">
+              Logout
+              <span className="inset-0 absolute" />
+            </Link>
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </nav>

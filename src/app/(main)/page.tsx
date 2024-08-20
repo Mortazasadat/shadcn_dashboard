@@ -1,4 +1,7 @@
+import { BarChar } from "@/components/dashboard/chart";
+import AnalyticsChart from "@/components/dashboard/analytics-chart";
 import DashboardCard from "@/components/dashboard/dashbaord-card";
+import PostTable from "@/components/posts/post-table";
 import { Folders, MessageCircle, Newspaper, User } from "lucide-react";
 
 export default function Home() {
@@ -26,6 +29,11 @@ export default function Home() {
           count={455}
         />
       </div>
+      <div className="grid grid-cols-1 gap-4 my-4 lg:grid-cols-2">
+        <AnalyticsChart />
+        <BarChar />
+      </div>
+      <PostTable limit={5} title="New Blog Posts" />
     </div>
   );
 }

@@ -22,8 +22,8 @@ import Link from "next/link";
 
 function Sidebar() {
   return (
-    <div>
-      <Command className="rounded-none h-screen  ">
+    <div className=" ">
+      <Command className="rounded-none w-full   ">
         <CommandInput placeholder="Type a command or search..." />
         <CommandList className="">
           <CommandEmpty>No results found.</CommandEmpty>
@@ -36,7 +36,7 @@ function Sidebar() {
             <CommandItem>
               {" "}
               <Newspaper className="mr-2 h-4 w-4" />
-              <Link href="/post">Post</Link>
+              <Link href="/posts">Post</Link>
             </CommandItem>
             <CommandItem>
               <Folders className="mr-2 h-4 w-4" />
