@@ -3,6 +3,7 @@ import AnalyticsChart from "@/components/dashboard/analytics-chart";
 import DashboardCard from "@/components/dashboard/dashbaord-card";
 import PostTable from "@/components/posts/post-table";
 import { Folders, MessageCircle, Newspaper, User } from "lucide-react";
+import DashboardHeader from "@/components/dashboard/dashboard-header";
 
 export default function Home() {
   return (

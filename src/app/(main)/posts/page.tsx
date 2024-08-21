@@ -5,7 +5,7 @@ import React from "react";
 
 function PostPage() {
   return (
-    <div>
+    <div className="px-5">
       <BackButton link="/" text="Back" />
       <PostTable title="All posts" />
       <PostPagination />

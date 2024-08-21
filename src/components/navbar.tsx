@@ -9,6 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ModeToggle } from "./mode-toggle";
 
 export default function Navbar() {
   return (
@@ -22,29 +23,33 @@ export default function Navbar() {
         />
       </Link>
 
-      <DropdownMenu>
-        <DropdownMenuTrigger className=" outline-none focus:outline-none">
-          {" "}
-          <Avatar className="outline-none focus:outline-none">
-            <AvatarImage src="/sayed.jpg" />
-            <AvatarFallback>SM</AvatarFallback>
-          </Avatar>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          <DropdownMenuLabel>My Account</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem>Profile</DropdownMenuItem>
-          <DropdownMenuItem>Billing</DropdownMenuItem>
+      <div className="flex items-center gap-x-5">
+        <ModeToggle />
 
-          <DropdownMenuSeparator />
-          <DropdownMenuItem className="relative cursor-pointer ">
-            <Link className="text-red-500 " href="/auth">
-              Logout
-              <span className="inset-0 absolute" />
-            </Link>
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+        <DropdownMenu>
+          <DropdownMenuTrigger className=" outline-none focus:outline-none">
+            {" "}
+            <Avatar className="outline-none focus:outline-none">
+              <AvatarImage src="/sayed.jpg" />
+              <AvatarFallback>SM</AvatarFallback>
+            </Avatar>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>Profile</DropdownMenuItem>
+            <DropdownMenuItem>Billing</DropdownMenuItem>
+
+            <DropdownMenuSeparator />
+            <DropdownMenuItem className="relative cursor-pointer ">
+              <Link className="text-red-500 " href="/auth">
+                Logout
+                <span className="inset-0 absolute" />
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
     </nav>
   );
 }

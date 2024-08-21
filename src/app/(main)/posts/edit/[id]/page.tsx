@@ -66,7 +66,7 @@ export default function PostEdit({ params }: PostEditProps) {
   }
 
   return (
-    <div className="h-screen ">
+    <div className="h-screen px-5">
       <BackButton link="/posts" text="Back" />
       <div className="mx-auto max-w-2xl mt-5">
         <h3 className="text-2xl font-semibold dark:text-white my-5">

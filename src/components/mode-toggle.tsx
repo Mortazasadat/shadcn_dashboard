@@ -16,13 +16,18 @@ export function ModeToggle() {
   const { setTheme } = useTheme();
 
   return (
-    <div className=" fixed right-8 bottom-8">
+    <div className=" ">
       <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="icon">
+        <DropdownMenuTrigger
+          asChild
+          className="!outline-none !focus:outline-none"
+        >
+          <Button
+            size="icon"
+            className="!outline-none dark:bg-black !focus:outline-none"
+          >
             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            <span className="sr-only">Toggle theme</span>
+            <Moon className="absolute h-[1.2rem] dark:text-white w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
