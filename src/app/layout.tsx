@@ -9,8 +9,8 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shadcn Dashboard",
-  description: "shadcn dashboard",
+  title: "Blog post dashboard",
+  description: "Blog post Dashboard using nextjs and shadcn-ui",
 };
 
 export default function RootLayout({
