@@ -46,7 +46,8 @@ bun run dev
 
 ### Screenshots
 
-![Dashboard Overview](/screenshot.png)
+![Dashboard Overview](./public/screenshot.png)
+![Dashboard Overview](./public/screenshot1.png)
 
 ### Contributing
 
